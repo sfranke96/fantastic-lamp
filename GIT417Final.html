@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plant Baby Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="StylesFinal.css">
+    <script defer src="JSFinal.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#switcher1">Products</a></li>
+          <li><a href="#game2">Game</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img src="https://www.dropbox.com/s/ssnapbwapx2wiov/banana-leaf-g752f0e194_1920.jpg?dl=0" alt="placeholder plant LOGO">
+        <h1>Welcome to Plant Baby</h1>
+        <p>Plant Baby is a subscription service that delivers one, two, or three live plants right to your door, every quarter. Our goal is to help you brighten up any home or office space with the power of plants! Whether you want statement foliage or an entire personal jungle, we've got you covered.</p>
+        <button id="toggle-mode">Light/Dark Mode</button>
+      </section>
+      <div class="logo">
+          <img src="https://www.dropbox.com/s/3gbat8vtwqzhwt7/pastel-g0ed53567c_1920.jpg?dl=0" alt="placeholder plant LOGO">
+      </div>
+      <section id="switcher1">
+		<h2>What's the Right Amount for You?</h2>
+		<section id="product1" class="currentItem">
+			<h3>One Plant</h3>
+			<img src="https://www.dropbox.com/s/xr0yrj20nwkb94y/ceramic-ga81d1d5e6_1920.jpg?dl=0" alt="placeholder image PLANT ONE">
+			<p>With this option, you get one mystery plant delivered every three months. We typically offer a sneak-peak a few weeks before sending out our plant babies to you on our social media, and if you ever have a strong preference for a type of plant, feel free to reach out to us below in the contact form, and we'll be happy to work with you!</p>
+		</section>
+		<section id="product2" class="hiddenItem">
+			<h3>Two Plants</h3>
+			<img src="https://www.dropbox.com/s/q49huco3fch9m01/cactus-g5d04ab6ac_1920.jpg?dl=0" alt="placeholder image PLANT TWO">
+			<p>With this option, you get two mystery plant delivered every three months. We typically offer a sneak-peak a few weeks before sending out our plant babies to you on our social media, and if you ever have a strong preference for a type of plant, feel free to reach out to us below in the contact form, and we'll be happy to work with you!</p>
+		</section>
+		<section id="product3" class="hiddenItem">
+			<h3>Three Plants</h3>
+			<img src="https://www.dropbox.com/s/xrwqw4gapeq08k0/fat-plants-g191a23d1f_1920.jpg?dl=0" alt="placeholder image PLANT THREE">
+			<p>With this option, you get three mystery plant delivered every three months. We typically offer a sneak-peak a few weeks before sending out our plant babies to you on our social media, and if you ever have a strong preference for a type of plant, feel free to reach out to us below in the contact form, and we'll be happy to work with you!</p>
+		</section>
+		<section id="switcherButtons">
+			<h2 class="sr-only">Click on a Button to View a Product</h2>
+			<button id="btn1">View One Plant</button>
+			<button id="btn2">View Two Plants</button>
+			<button id="btn3">View Three Plants</button>
+		</section>
+	</section>
+  <section id="game2">
+		<div>
+			<h2>Guess the Number</h2>
+			<p>Enter a number between 1 and 10 below and click the button to play. If the numbers match, you win!</p>
+			<form>
+				<label for="numGuess2">Enter a Number Between 1 and 10:</label>
+				<span class="message">Please enter a number from 1 to 10</span>
+				<input type="number" name="numGuess2" id="numGuess2">
+				<input type="submit" name="guessGame2" id="guessGame2" value="Play the Game!">
+			</form>
+			<div id="gameDisplay2">
+				<p id="game2Msg">Message about winning or losing the game</p>
+			</div>
+		</div>
+	</section>
+      <section class="contact">
+        <form id="contact-form">
+          <h2>Contact Us</h2>
+          <div>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div>
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" required>
+          </div>
+          <div>
+            <label for="email-address">Email Address:</label>
+            <input type="email" id="email-address" name="email-address" required>
+          </div>
+          <div>
+            <label>How would you like to be contacted?</label>
+              <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+              <label for="contact-phone">Phone</label>
+          </div>
+          <div>
+              <input type="radio" id="contact-email" name="contact-method" value="email" required>
+              <label for="contact-email">Email</label>
+          </div>
+          <div>
+            <label for="contact-comment">What can we help you with?</label>
+            <input type="text" id="contact-comment" name="contact-comment" required>
+          </div>
+            <button id="submit-form">Submit</button>
+              <p id="result"></p>
+         </form>
+      </section>
+    </main>
+    <footer>
+	    <p>For Educational Purposes Only</p>
+    </footer>

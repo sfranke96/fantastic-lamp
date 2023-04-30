@@ -1,0 +1,390 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+	--light-gray: #eaeaea;
+  --med-gray: #555;
+	--dark-gray: #222;
+	--white: #fff;
+	
+	--box-shadow: -5px 5px 5px var(--med-gray);
+	--hover-shadow: -3px 3px 6px var(--med-gray);
+	
+	font-size: 16px;
+}
+
+html{
+	background-color: #2D5F73;
+  background-image: 
+    url(leaves-318743_960_720.jpg);
+}
+
+/* Set default font and background color
+Set max width of the site and center it*/
+/* Light mode styles */
+body {
+  font-family: roboto, sans-serif;
+  background-color: #F28C8C;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Style for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #34592E;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: pink;
+  text-decoration: none;
+}
+
+/* Style for the navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  font-size: 30px;
+  color: #E6E6E6;;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #F2B8A2;
+}
+
+/* Style for the hero section */
+.hero {
+  height: 400px;
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  color: #141E26;
+  text-align: center;
+}
+
+/* Style for the hero text */
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+/* Style for Dark/Light Mode button */
+#toggle-mode {
+  background-color: #141E26;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#toggle-mode:hover {
+  background-color: #fff;
+  color: #141E26;
+}
+
+/* Style for the product display section */
+body{
+	color: var(--dark-gray);
+	line-height: 1.35;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+/* Hidden content for screen reader users - code from: https://webaim.org/techniques/css/invisiblecontent/ */
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+main, footer{
+	width: 100%;
+	padding: 16px;
+	max-width: calc(1280px - 32px);
+	margin: 0 auto;
+}
+
+/* Headings */
+h1, h2, h3, h4{
+	text-align: center;
+	font-weight: bold;
+}
+
+h1{
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+h2{
+	font-size: 1.65rem;
+	margin: 0.75rem;
+}
+
+h3{
+	font-size: 1.45rem;
+	margin: 0.5rem;
+}
+
+h4{
+	font-size: 1.3rem;
+	margin: 0.35rem;
+}
+
+/* Images */
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+/* Paragraphs */
+p{
+	max-width: 65ch;
+	padding: 1rem 0;
+	margin: 0 auto;
+}
+
+/* Buttons All */
+button, input[type="submit"]{
+	display: block;
+	padding: 1rem;
+	background-color: #141E26;
+	color: var(--white);
+	border: none;
+	box-shadow: var(--box-shadow);
+}
+
+input[type="submit"]{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Form, Game, Light/Dark Button styles */
+
+#toggle-mode, #submit-guess, #submit-form {
+	width: fit-content;
+	margin: 2rem auto;
+  text-align: center;
+  align-items: center;
+}
+
+/* Form */
+input, label{
+	display: block;
+	font-size: 1rem;
+	font-family: sans-serif;
+}
+
+label{
+	margin: 0.5rem 0 0.25rem 0;
+}
+
+input{
+	padding: 0.5rem 0.25rem;
+	margin: 0 auto 1rem auto;
+	width: calc(100% - 1rem);
+}
+
+/* Error and Input Styles */
+.message{
+  display: none;
+  color: var(--orange);
+  font-size: 1.2em;
+  margin: 0.25em 0;
+  font-weight: bold;
+}
+
+.error{
+  font-size: 1em;
+  display: block;
+}
+
+.errorInput{
+  border: 1px solid var(--orange);
+}
+
+/* Section Styles */
+#switcher1, #game2, #contact-form {
+	background-color: #F2B8A2;
+	padding: 1rem;
+	width: calc(100% - 2rem);
+	max-width: 1280px;
+}
+
+/* Switcher Styles */
+#switcher1 .currentItem{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr;
+	gap: 1rem;
+}
+
+.hiddenItem{
+	display: none;
+}
+
+#switcherButtons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	width: fit-content;
+	margin: 2rem auto;
+}
+
+#switcher1 img{
+	grid-row: 1/-1;
+}
+
+#switcher1 h3{
+	grid-column: 2/-1;
+	align-self: end;
+}
+
+/* Numbers Game Styles */
+#game2{
+	margin-top: 2rem;	
+	padding-bottom: 2rem;
+}
+
+#game2 div{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#game2 form{
+	width: 325px;
+	margin: 1rem auto
+}
+
+#game2 input{
+	display: inline-block;
+	width: 50px;
+}
+
+#game2 label{
+	display: inline-block;
+	width: auto;
+}
+
+#game2 #guessGame2{
+	display: block;
+	width: auto;
+}
+
+#numGuess2 {
+  background-color: #E6E6E6;
+}
+
+#gameOutput2{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	width: 300px; 
+	margin: 0 auto;
+}
+
+#game2Msg{
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+/* Contact Form Styles */
+
+#contact-form {
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;	
+	padding-bottom: 2rem;
+}
+
+#email-address, #phone-number, #full-name {
+  width: 400px;
+  background-color: #E6E6E6;
+}
+
+#contact-comment {
+  width: 500px;
+  height: 200px;
+  background-color: #E6E6E6;
+}
+
+#contact-phone, #contact-email {
+  display: grid;
+}
+
+input.invalid {
+  border: 2px solid red;
+}
+
+p#result {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+p#result.success {
+  color: green;
+}
+
+/* Product Switcher Classes */
+ .currentItem{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 4fr;
+	gap: 1rem;
+}
+
+.hiddenItem{
+	display: none;
+}
+
+/* Footer */
+footer {
+	padding: 1rem 0;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+/* Hover Styles */
+@media (hover:hover){
+	button:hover, input[type="submit"]:hover{
+		box-shadow: var(--hover-shadow);
+	}
+}
